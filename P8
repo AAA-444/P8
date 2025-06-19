@@ -1,0 +1,31 @@
+def DivExp(a, b):
+
+ if a <= 0:
+
+ raise ValueError("a must be greater than 0") # More appropriate than assert
+
+ 
+
+ if b == 0:
+
+ raise ZeroDivisionError("b must not be zero") # Custom message
+
+ return a / b # Direct return
+
+try:
+
+ a = int(input("Enter the value of a: "))
+
+ b = int(input("Enter the value of b: "))
+
+ r = DivExp(a, b)
+
+ print("The value of {0}/{1} = {2}".format(a, b, r))
+
+except ValueError as ve:
+
+ print("Input Error:", ve)
+
+except ZeroDivisionError as zde:
+
+ print("Math Error:", zde)
