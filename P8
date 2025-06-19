@@ -2,13 +2,13 @@ def DivExp(a, b):
 
  if a <= 0:
 
- raise ValueError("a must be greater than 0") # More appropriate than assert
+    raise ValueError("a must be greater than 0") # More appropriate than assert
 
  
 
  if b == 0:
 
- raise ZeroDivisionError("b must not be zero") # Custom message
+    raise ZeroDivisionError("b must not be zero") # Custom message
 
  return a / b # Direct return
 
